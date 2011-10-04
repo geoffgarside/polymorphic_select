@@ -1,5 +1,4 @@
-require 'action_view/helpers/tag_helper'
-require 'action_view/helpers/form_options_helper'
+require 'action_view/helpers'
 
 module PolymorphicSelect
   class PolymorphicSelector
