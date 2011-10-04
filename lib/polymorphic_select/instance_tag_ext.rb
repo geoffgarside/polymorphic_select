@@ -1,4 +1,4 @@
-require "polymorphic_selector"
+require "polymorphic_select/polymorphic_selector"
 
 module PolymorphicSelect
   module InstanceTagExt
