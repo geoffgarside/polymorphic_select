@@ -7,6 +7,8 @@
 
 module PolymorphicSelect
   module MultiparameterAssignmentExt
+    extend ActiveSupport::Concern
+
     private
       def read_value_from_parameter(name, values_hash_from_param)
         begin

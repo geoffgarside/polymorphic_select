@@ -2,6 +2,8 @@ require "polymorphic_selector"
 
 module PolymorphicSelect
   module InstanceTagExt
+    extend ActiveSupport::Concern
+
     def to_polymorphic_select_tag(choices, options = {}, html_options = {})
       polymorphic_selector(choices, options, html_options).select_polymorph.html_safe
     end

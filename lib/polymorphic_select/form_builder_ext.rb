@@ -1,5 +1,7 @@
 module PolymorphicSelect
   module FormBuilderExt
+    extend ActiveSupport::Concern
+
     def polymorphic_select(method, choices, options = {}, html_options = {})
       @template.polymorphic_select(@object_name, method, choices, objectify_options(options), html_options)
     end
